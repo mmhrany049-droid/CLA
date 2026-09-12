@@ -1,0 +1,32 @@
+# --- Runtime data (local-only per spec 06: the whole data/ folder lives on the user's machine) ---
+data/**
+!data/
+!data/**/
+!data/**/.gitkeep
+
+# --- Databases anywhere (should only exist under data/) ---
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Streamlit ---
+.streamlit/secrets.toml
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

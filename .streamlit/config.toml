@@ -1,0 +1,15 @@
+# CLA / سیلا — Streamlit configuration
+# Offline-first compliance: Streamlit usage telemetry is DISABLED.
+# The app never contacts the internet at runtime (spec 03: Offline-First Rules).
+
+[server]
+headless = true
+# Bound to localhost by default — a local single-user offline tool.
+# (For sandbox/LAN preview it can be overridden on the command line with
+#  --server.address 0.0.0.0)
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"

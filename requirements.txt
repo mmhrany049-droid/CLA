@@ -1,0 +1,11 @@
+# CLA / سیلا — Phase 1 (Starting Materials Manager) dependencies
+# Install once (needs internet for pip); the application itself runs fully offline.
+#
+#   python -m venv .venv
+#   .venv/bin/pip install -r requirements.txt      (Linux/macOS)
+#   .venv\Scripts\pip install -r requirements.txt  (Windows)
+
+streamlit>=1.40
+rdkit>=2024.3.1
+pandas>=2.0
+streamlit-jsme>=0.1.10   # JSME structure editor, bundles its JS assets locally (MIT, offline)
